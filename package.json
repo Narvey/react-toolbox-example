@@ -32,22 +32,16 @@
     "url": "https://github.com/react-toolbox/react-toolbox/issues",
     "email": "issues@react-toolbox.com"
   },
-  "keywords": [
-    "components",
-    "material design",
-    "react",
-    "react-component",
-    "toolbox"
-  ],
+  "keywords": ["components", "material design", "react", "react-component", "toolbox"],
   "engines": {
     "node": ">=4.3.0",
     "npm": ">=4.0.1"
   },
   "dependencies": {
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-toolbox": "^2.0.0-beta.5",
-    "react-addons-css-transition-group": "^15.4.2"
+    "react-toolbox": "^2.0.0-beta.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",
@@ -75,8 +69,10 @@
     "webpack-dev-server": "^2.2.0"
   },
   "scripts": {
-    "start": "node_modules/.bin/cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --colors --config webpack.config.js",
-    "build": "node_modules/.bin/cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config.js",
+    "start":
+      "node_modules/.bin/cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --colors --config webpack.config.js",
+    "build":
+      "node_modules/.bin/cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config.js",
     "deploy": "gh-pages -d build"
   },
   "license": "MIT",
