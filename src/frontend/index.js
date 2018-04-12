@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './component/App';
 import { overrideComponentTypeChecker } from 'react-toolbox';
 
-const rootEl = document.getElementById('app');
+const rootEl = document.getElementById('root');
 
 const render = () => {
   ReactDOM.render(
